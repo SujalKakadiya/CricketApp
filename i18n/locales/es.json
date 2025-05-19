@@ -1,0 +1,26 @@
+{
+    "common": {
+      "home": "Inicio",
+      "categories": "Categorías",
+      "cart": "Carrito",
+      "profile": "Perfil",
+      "settings": "Ajustes",
+      "language": "Idioma",
+      "theme": "Tema",
+      "darkMode": "Modo Oscuro",
+      "lightMode": "Modo Claro"
+    },
+    "auth": {
+      "login": "Iniciar Sesión",
+      "register": "Registrarse",
+      "logout": "Cerrar Sesión",
+      "email": "Correo",
+      "password": "Contraseña" 
+    },
+    "errors": {
+      "somethingWentWrong": "Algo salió mal",
+      "networkError": "Error de red",
+      "unauthorized": "Acceso no autorizado"
+    }
+  }
+  

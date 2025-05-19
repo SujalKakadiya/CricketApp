@@ -1,0 +1,26 @@
+{
+    "common": {
+      "home": "Home",
+      "categories": "Categories",
+      "cart": "Cart",
+      "profile": "Profile",
+      "settings": "Settings",
+      "language": "Language",
+      "theme": "Theme",
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode"
+    },
+    "auth": {
+      "login": "Login",
+      "register": "Register",
+      "logout": "Logout",
+      "email": "Email",
+      "password": "Password"
+    },
+    "errors": {
+      "somethingWentWrong": "Something went wrong",
+      "networkError": "Network error",
+      "unauthorized": "Unauthorized access"
+    }
+  }
+  
