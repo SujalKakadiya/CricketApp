@@ -5,26 +5,29 @@ import themeReducer, { ThemeState } from './themeSlice';
 import languageReducer, { LanguageState } from './languageSlice';
 import authReducer, { AuthState }  from './auth'
 import { TypedUseSelectorHook, useDispatch ,  useSelector as useReduxSelector,} from 'react-redux';
+import { cartReducer, CartState } from '@/products/cart';
 
 interface RootReducerState {
   theme: ThemeState;
   language:LanguageState;
   auth: AuthState;
+  cart: CartState
 }
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['theme','auth','language'], // Add other reducers to persist here
+  whitelist: ['theme','auth','language', 'cart'], // Add other reducers to persist here
 };
 
 const rootReducer = combineReducers({
   theme: themeReducer,
   language: languageReducer,
   auth: authReducer,
+  cart: cartReducer,
 });
 
-const persistedReducer = persistReducer<RootReducerState>(persistConfig, rootReducer);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,

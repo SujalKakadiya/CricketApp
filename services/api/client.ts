@@ -2,9 +2,8 @@
 import axios from 'axios';
 import { store } from '../../store'; 
 
-
 const Api = axios.create({
-  baseURL: 'https://api.example.com', // Replace with your actual base URL
+  baseURL: 'https://dummyjson.com', // Replace with your actual base URL
   timeout: 10000, // 10 seconds timeout
   headers: {
     'Content-Type': 'application/json',
